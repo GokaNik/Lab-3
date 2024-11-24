@@ -31,7 +31,8 @@ label_bg.place(x=0, y=0, relwidth=1, relheight=1)
 code_lbl = tk.Label(window, text='Your code')  #Поле с кодом
 code_lbl.place(relx=0.5, rely=0.6, relwidth=0.3, anchor='s')
 
-btn_gen = tk.Button(window, text='Generate code', width=20, command=lambda: code_gen())  #Кнопка для генерации кода
+btn_gen = tk.Button(window, text='Generate code',
+                    width=20, command=lambda: code_gen())  #Кнопка для генерации кода
 btn_gen.place(relx=0.5, rely=0.5, anchor='s')
 
 window.mainloop()
